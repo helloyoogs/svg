@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>svg 사각형</title>
+    <style>
+      svg { width: 500px; height: 500px;
+            border: 1px solid #000; }
+      rect { width: 300px; height: 300px;
+            x: 100; y: 100;
+            fill: #fff;
+            stroke-width: 1;
+            stroke: #000;
+            stroke-dasharray: 1200;
+            stroke-dashoffset: 1200;
+            animation: dash 2s linear forwards;
+          }
+      @keyframes dash {
+        to { stroke-dashoffset: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <svg>
+      <rect />
+    </svg>
+  </body>
+</html>
